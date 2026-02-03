@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Appointment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h2>Book Your Slot</h2>
+
+<form onsubmit="bookNow(event)">
+  <label>Date</label><br>
+  <input type="date" required><br><br>
+
+  <label>Time</label><br>
+  <input type="time" required><br><br>
+
+  <button>Confirm Booking</button>
+</form>
+
+<script>
+function bookNow(e){
+  e.preventDefault();
+  alert("Booking Confirmed!");
+}
+</script>
+
+</body>
+</html>
